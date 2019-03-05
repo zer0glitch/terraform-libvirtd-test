@@ -1,0 +1,4 @@
+---
+- hosts: terraform_test ansible_host=172.26.14.60 ansible_connection=ssh
+  tasks:
+  - shell: cd /opt/terraform-test/ && robot hello.robot > hello.log 2>&1

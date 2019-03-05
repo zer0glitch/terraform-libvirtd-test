@@ -1,0 +1,135 @@
+# upstream repo
+# BEGIN ANSIBLE MANAGED BLOCK EPEL ANSIBLE  
+[ansible-epel]
+name=ansible-epel
+baseurl="https://releases.ansible.com/ansible/rpm/release/epel-7-x86_64/"
+enabled=1
+gpgcheck=0
+# END ANSIBLE MANAGED BLOCK EPEL ANSIBLE  
+# BEGIN ANSIBLE MANAGED BLOCK RHEL UPSTREAM  
+[rhel]
+name=rhel SRCLE
+baseurl="http://172.26.14.40"
+enabled=1
+gpgcheck=0
+# END ANSIBLE MANAGED BLOCK RHEL UPSTREAM  
+# BEGIN ANSIBLE MANAGED BLOCK ACS external  
+[curator-3]
+name=CentOS/RHEL 7 repository for Elasticsearch Curator 3.x packages
+baseurl=http://packages.elastic.co/curator/3/centos/7
+gpgcheck=1
+gpgkey=http://packages.elastic.co/GPG-KEY-elasticsearch
+enabled=1
+
+[elastic-6.x]
+name=Elastic repository for 6.x packages
+baseurl=https://artifacts.elastic.co/packages/6.x/yum
+gpgcheck=1
+gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch
+enabled=1
+autorefresh=1
+type=rpm-md
+
+[elasticsearch-6.x]
+name=Elasticsearch repository for 6.x packages
+baseurl=https://artifacts.elastic.co/packages/6.x/yum
+gpgcheck=1
+gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch
+enabled=1
+autorefresh=1
+type=rpm-md
+
+[kibana-6.x]
+name=Kibana repository for 6.x packages
+baseurl=https://artifacts.elastic.co/packages/6.x/yum
+gpgcheck=1
+gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch
+enabled=1
+autorefresh=1
+type=rpm-md
+
+[logstash-6.x]
+name=Elastic repository for 6.x packages
+baseurl=https://artifacts.elastic.co/packages/6.x/yum
+gpgcheck=1
+gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch
+enabled=1
+autorefresh=1
+type=rpm-md
+
+##
+#[elasticsearch-1.6]
+#name=Elasticsearch repository for 1.6.x packages
+#baseurl=http://packages.elastic.co/elasticsearch/1.6/centos
+#gpgcheck=0
+#gpgkey=http://packages.elastic.co/GPG-KEY-elasticsearch
+#enabled=1
+#
+#[elasticsearch-1.4]
+#name=Elasticsearch repository for 1.4.x packages
+#baseurl=http://packages.elastic.co/elasticsearch/1.4/centos
+#gpgcheck=0
+#gpgkey=http://packages.elastic.co/GPG-KEY-elasticsearch
+#enabled=1
+#
+#[logstash-2.3]
+#name=Logstash repository for 2.3.x packages
+#baseurl=https://packages.elastic.co/logstash/2.3/centos
+#gpgcheck=0
+#gpgkey=https://packages.elastic.co/GPG-KEY-elasticsearch
+#enabled=1
+#
+#[curator-3]
+#name=CentOS/RHEL 7 repository for Elasticsearch Curator 3.x packages
+#baseurl=http://packages.elastic.co/curator/3/centos/7
+#gpgcheck=0
+#gpgkey=http://packages.elastic.co/GPG-KEY-elasticsearch
+#enabled=1
+#
+#[elasticsearch-2.x]
+#name=Elasticsearch repository for 2.x packages
+#baseurl=https://packages.elastic.co/elasticsearch/2.x/centos
+#gpgcheck=0
+#gpgkey=https://packages.elastic.co/GPG-KEY-elasticsearch
+#enabled=1
+#
+#[beats]
+#name=Elastic Beats Repository
+#baseurl=https://packages.elastic.co/beats/yum/el/$basearch
+#enabled=1
+#gpgkey=https://packages.elastic.co/GPG-KEY-elasticsearch
+#gpgcheck=0
+#
+#[kibana-4.5]
+#name=Kibana repository for 4.5.x packages
+#baseurl=http://packages.elastic.co/kibana/4.5/centos
+#gpgcheck=0
+#gpgkey=http://packages.elastic.co/GPG-KEY-elasticsearch
+#enabled=1
+#
+#
+### nginx feature/ACS3-1599-implement-kibana-auth-via-web-proxy
+#[nginx]
+#name=nginx repo
+#baseurl=http://nginx.org/packages/rhel/7/x86_64/
+#gpgcheck=0
+#enabled=1
+# END ANSIBLE MANAGED BLOCK ACS external  
+# BEGIN ANSIBLE MANAGED BLOCK ACS 3rd  
+[thridparty]
+name=TCRI THIRDPARTY
+baseurl="https://nexus.di2e.net/nexus/content/repositories/Private_ACS3_ThirdParty/"
+username=jamie.whetsell
+password=Dolphin44Blue!!
+enabled=1
+gpgcheck=0
+# END ANSIBLE MANAGED BLOCK ACS 3rd  
+# BEGIN ANSIBLE MANAGED BLOCK ACS UPSTREAM  
+[tcri]
+name=TCRI SRCLE
+baseurl="https://nexus.di2e.net/nexus/content/repositories/Private_ACS3_Releases/"
+username=jamie.whetsell
+password=Dolphin44Blue!!
+enabled=1
+gpgcheck=0
+# END ANSIBLE MANAGED BLOCK ACS UPSTREAM 

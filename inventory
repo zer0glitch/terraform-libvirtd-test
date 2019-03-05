@@ -1,0 +1,1 @@
+terraform_test ansible_host=172.26.14.60 ansible_connection=ssh
